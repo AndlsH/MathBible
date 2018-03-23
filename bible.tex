@@ -27,6 +27,13 @@
 % 正文 ================================================================
 \mainmatter
 
+\pagestyle{fancy}
+%\fancyhf{} % clear all fields
+\fancyfoot{} % clear all 
+%\fancyhead[RO,LE]{\leftmark}
+\fancyfoot[LE,RO]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
 % 正文章节
 \part{微积分}
 \include{main/integrals}
