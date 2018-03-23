@@ -1,11 +1,16 @@
 % !TeX encoding = UTF-8
+% !TEX program = xelatex
 \documentclass[UTF8]{ctexbook}
 % 设置独立编译
 \def\allfiles{}
 \include{pre}
+\def\allfiles{} % 独立编译
+\input{setup/cfg}% 加载配置
 
 \begin{document}
 
+% 封面
+%\include{preface/cover}
 
 \section{泰勒展开式}
 带佩亚诺型余项的麦克劳林公式
@@ -118,7 +123,44 @@ $
     \item $  $，\\
     \item $  $。
   \end{tabenum}
+% 前文
+\frontmatter
+\pagenumbering{Roman}
 
+% 前言和编译说明
+%\include{preface/preface}
+%\include{preface/readme}
+
+% 中英文摘要
+%\include{preface/cnabs}
+%\include{preface/enabs}
+
+% 生成目录
+\tableofcontents
+
+% 正文 ================================================================
+\mainmatter
+
+% 正文章节
+\part{微积分}
 \include{main/integrals}
+
+\part{线性代数}
+
+\part{概率论与数理统计}
+
+% 后文 ================================================================
+%\backmatter
+
+% 致谢
+%\include{main/thanks}
+
+% 参考文献
+%\bibliographystyle{ref/chinesebst}
+%\bibliography{ref/ref}
+%\addcontentsline{toc}{chapter}{参考文献}
+
+% 附录
+%\include{appendix/fulu}
 
 \end{document} 
