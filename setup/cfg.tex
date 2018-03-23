@@ -1,1 +1,13 @@
 % !TeX encoding = UTF-8
+\usepackage[left=20mm,right=20mm,top=25mm,bottom=25mm]{geometry}% 页面设置
+\usepackage[xetex,CJKbookmarks,bookmarksnumbered,bookmarksopen,colorlinks,pdfauthor={eeLord},pdftitle={Math Bible},pdfsubject={Yet another math reference},pdfkeywords={mathematics, reference}]{hyperref}% 编译程序，中文书签目录，添加章节序号，书签目录展开到节标题，链接改用彩色显示（红）。在Acrobat中创建书签目录（默认）
+%\usepackage{fontspec}
+%\setmainfont{宋体}
+%\usepackage{times} %公式字体
+%\usepackage{mathptmx}  % Times New Roman
+%\bibliographystyle{gbt7714-2005}    %国标参考文献
+
+% 解决因行内公式造成的行距问题 *************************************
+\lineskiplimit=2pt  %若两行间距小于该值
+\lineskip=3pt       %则插入行间空白
+
